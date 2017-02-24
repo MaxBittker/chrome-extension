@@ -1,3 +1,14 @@
-Raven.config('https://d9295e5ec35946f1a8d5e8b71c65adce@sentry.io/76439').install()
+var Raven = require('raven-js');
 
-https://5fdcb3aeb7f446a1aaac367d932a48bd@sentry.io/100653
+Raven.config('https://29227a0fd83245c188093c775552099c@sentry.io/130905',{
+  release:'1.0.2'
+}).install()
+
+
+let mybutton = document.getElementById('btn')
+
+mybutton.addEventListener("click", function(){
+  mybutton.innerHTML = "bundle"
+  console.log("test")
+  zz.BAZ();
+});
