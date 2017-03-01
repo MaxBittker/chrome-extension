@@ -1,10 +1,13 @@
 
 module.exports = {
-  entry: "./index.js",
+  entry: {
+    popup: "./popup.js",
+    content: "./content_script.js"
+  },
   output: {
-   path: "./",
-   filename: "bundle.js",
-   sourceMapFilename: "bundle.js.map",
+   path: "./dist",
+   filename: "[name]-bundle.js",
+   sourceMapFilename: "[name]-bundle.js.map",
  },
  devtool: 'source-map',
  module: {
